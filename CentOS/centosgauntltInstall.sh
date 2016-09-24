@@ -17,6 +17,7 @@ fi
 yum -y update; yum clean all
 yum -y install git ruby which ruby-doc ruby-devel autoconf automake make g++ gcc openssl-devel zlib-devel httpd-devel apr-devel apr-util-devel sqlite-devel curl-devel nmap; yum clean all
 gem install bundler gauntlt arachni rake
+bundle install
 git clone https://github.com/Joeyn414/gauntlt.git
 
 # add this text to the arachi.json file in /usr/lib/ruby/gems/2.2.0/gems/gauntlt-1.0.12/lib/gauntlt/attack_aliases/arachni.json
