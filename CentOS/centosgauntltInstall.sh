@@ -17,6 +17,7 @@ fi
 yum -y update; yum clean all
 yum -y install git ruby which ruby-doc ruby-devel autoconf automake make g++ gcc openssl-devel zlib-devel httpd-devel apr-devel apr-util-devel sqlite-devel curl-devel nmap; yum clean all
 gem install bundler gauntlt arachni rake
+gem install rake -v 11.0.1
 bundle install
 git clone https://github.com/Joeyn414/gauntlt.git
 
