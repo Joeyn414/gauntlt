@@ -21,10 +21,7 @@ git clone https://github.com/Joeyn414/gauntlt.git
 
 # add this text to the arachi.json file in /usr/lib/ruby/gems/2.2.0/gems/gauntlt-1.0.12/lib/gauntlt/attack_aliases/arachni.json
 
-awk '{ if (NR ==29) print "},
-    "arachni-allmediumandhigher" : { "command" : "arachni --checks=*,-interesting_responses,-webdav,-localstart_asp,-directory_listing,-private_ip,-form_upload,-cvs_svn_users,-captcha,-http_only_cookies,-html_objects,-emails,-cookie_set_for_parent_domain,-common_files,-allowed_methods <url>",
-      "description" : "This scan performs all checks except the checks that are low or informational only. We did leave in insecure_cookies even though this originally was an informational risk.",
-      "requires" : [ "<url>" ]"; else print $0}' /usr/local/share/gems/gems/gauntlt-1.0.12/lib/gauntlt/attack_aliases/arachni.json > /usr/local/share/gems/gems/gauntlt-1.0.12/lib/gauntlt/attack_aliases/arachni.json
+cp /opt/security/gauntlt/lib/gauntlt/attack_aliases/arachni.json /usr/local/share/gems/gems/gauntlt-1.0.12/lib/gauntlt/attack_aliases/arachni.json
 endtime=$(date +%s.%N)
 runtime=$(python -c "print(${endtime} - ${starttime})")
 echo "Runtime was $runtime"
