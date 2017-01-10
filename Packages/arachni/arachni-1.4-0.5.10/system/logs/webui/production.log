@@ -1,0 +1,107 @@
+# Logfile created on 2016-02-09 00:29:12 +0200 by logger.rb/47272
+ScanManager#keep_schedule
+Arachni::Reactor: Could not find table 'scans'
+Arachni::Reactor: /home/zapotek/arachni-build-dir/arachni/system/gems/gems/activerecord-4.2.5.1/lib/active_record/connection_adapters/sqlite3_adapter.rb:511:in `table_structure'
+Arachni::Reactor: /home/zapotek/arachni-build-dir/arachni/system/gems/gems/activerecord-4.2.5.1/lib/active_record/connection_adapters/sqlite3_adapter.rb:385:in `columns'
+Arachni::Reactor: /home/zapotek/arachni-build-dir/arachni/system/gems/gems/activerecord-4.2.5.1/lib/active_record/connection_adapters/schema_cache.rb:43:in `columns'
+Arachni::Reactor: /home/zapotek/arachni-build-dir/arachni/system/gems/gems/activerecord-4.2.5.1/lib/active_record/attributes.rb:93:in `columns'
+Arachni::Reactor: /home/zapotek/arachni-build-dir/arachni/system/gems/gems/activerecord-4.2.5.1/lib/active_record/attributes.rb:98:in `columns_hash'
+Arachni::Reactor: /home/zapotek/arachni-build-dir/arachni/system/gems/gems/activerecord-4.2.5.1/lib/active_record/relation/query_methods.rb:969:in `block in create_binds'
+Arachni::Reactor: /home/zapotek/arachni-build-dir/arachni/system/gems/gems/activerecord-4.2.5.1/lib/active_record/relation/query_methods.rb:967:in `each'
+Arachni::Reactor: /home/zapotek/arachni-build-dir/arachni/system/gems/gems/activerecord-4.2.5.1/lib/active_record/relation/query_methods.rb:967:in `partition'
+Arachni::Reactor: /home/zapotek/arachni-build-dir/arachni/system/gems/gems/activerecord-4.2.5.1/lib/active_record/relation/query_methods.rb:967:in `create_binds'
+Arachni::Reactor: /home/zapotek/arachni-build-dir/arachni/system/gems/gems/activerecord-4.2.5.1/lib/active_record/relation/query_methods.rb:989:in `block in create_binds'
+Arachni::Reactor: /home/zapotek/arachni-build-dir/arachni/system/gems/gems/activerecord-4.2.5.1/lib/active_record/relation/query_methods.rb:987:in `each'
+Arachni::Reactor: /home/zapotek/arachni-build-dir/arachni/system/gems/gems/activerecord-4.2.5.1/lib/active_record/relation/query_methods.rb:987:in `create_binds'
+Arachni::Reactor: /home/zapotek/arachni-build-dir/arachni/system/gems/gems/activerecord-4.2.5.1/lib/active_record/relation/query_methods.rb:954:in `build_where'
+Arachni::Reactor: /home/zapotek/arachni-build-dir/arachni/system/gems/gems/activerecord-4.2.5.1/lib/active_record/relation/query_methods.rb:584:in `where!'
+Arachni::Reactor: /home/zapotek/arachni-build-dir/arachni/system/gems/gems/activerecord-4.2.5.1/lib/active_record/relation/query_methods.rb:574:in `where'
+Arachni::Reactor: /home/zapotek/arachni-build-dir/arachni/system/arachni-ui-web/app/models/schedule.rb:29:in `block in <class:Schedule>'
+Arachni::Reactor: /home/zapotek/arachni-build-dir/arachni/system/gems/gems/activerecord-4.2.5.1/lib/active_record/scoping/named.rb:155:in `call'
+Arachni::Reactor: /home/zapotek/arachni-build-dir/arachni/system/gems/gems/activerecord-4.2.5.1/lib/active_record/scoping/named.rb:155:in `block (2 levels) in scope'
+Arachni::Reactor: /home/zapotek/arachni-build-dir/arachni/system/gems/gems/activerecord-4.2.5.1/lib/active_record/relation.rb:302:in `scoping'
+Arachni::Reactor: /home/zapotek/arachni-build-dir/arachni/system/gems/gems/activerecord-4.2.5.1/lib/active_record/scoping/named.rb:155:in `block in scope'
+Arachni::Reactor: /home/zapotek/arachni-build-dir/arachni/system/arachni-ui-web/lib/scan_manager.rb:80:in `keep_schedule'
+Arachni::Reactor: /home/zapotek/arachni-build-dir/arachni/system/arachni-ui-web/lib/scan_manager.rb:22:in `block in monitor'
+Arachni::Reactor: /home/zapotek/arachni-build-dir/arachni/system/gems/gems/arachni-reactor-0.1.1/lib/arachni/reactor/tasks/base.rb:52:in `call'
+Arachni::Reactor: /home/zapotek/arachni-build-dir/arachni/system/gems/gems/arachni-reactor-0.1.1/lib/arachni/reactor/tasks/base.rb:52:in `call_task'
+Arachni::Reactor: /home/zapotek/arachni-build-dir/arachni/system/gems/gems/arachni-reactor-0.1.1/lib/arachni/reactor/tasks/persistent.rb:24:in `call'
+Arachni::Reactor: /home/zapotek/arachni-build-dir/arachni/system/gems/gems/arachni-reactor-0.1.1/lib/arachni/reactor/tasks/periodic.rb:43:in `call'
+Arachni::Reactor: /home/zapotek/arachni-build-dir/arachni/system/gems/gems/arachni-reactor-0.1.1/lib/arachni/reactor/tasks.rb:96:in `block in call'
+Arachni::Reactor: /home/zapotek/arachni-build-dir/arachni/system/gems/gems/arachni-reactor-0.1.1/lib/arachni/reactor/tasks.rb:96:in `each'
+Arachni::Reactor: /home/zapotek/arachni-build-dir/arachni/system/gems/gems/arachni-reactor-0.1.1/lib/arachni/reactor/tasks.rb:96:in `call'
+Arachni::Reactor: /home/zapotek/arachni-build-dir/arachni/system/gems/gems/arachni-reactor-0.1.1/lib/arachni/reactor.rb:309:in `block in run'
+Arachni::Reactor: /home/zapotek/arachni-build-dir/arachni/system/gems/gems/arachni-reactor-0.1.1/lib/arachni/reactor.rb:307:in `loop'
+Arachni::Reactor: /home/zapotek/arachni-build-dir/arachni/system/gems/gems/arachni-reactor-0.1.1/lib/arachni/reactor.rb:307:in `run'
+Arachni::Reactor: /home/zapotek/arachni-build-dir/arachni/system/gems/gems/arachni-reactor-0.1.1/lib/arachni/reactor.rb:349:in `block in run_in_thread'
+DispatcherManager#refresh
+Arachni::Reactor: SQLite3::SQLException: no such table: dispatchers: SELECT "dispatchers".* FROM "dispatchers"
+Arachni::Reactor: /home/zapotek/arachni-build-dir/arachni/system/gems/gems/sqlite3-1.3.11/lib/sqlite3/database.rb:91:in `initialize'
+Arachni::Reactor: /home/zapotek/arachni-build-dir/arachni/system/gems/gems/sqlite3-1.3.11/lib/sqlite3/database.rb:91:in `new'
+Arachni::Reactor: /home/zapotek/arachni-build-dir/arachni/system/gems/gems/sqlite3-1.3.11/lib/sqlite3/database.rb:91:in `prepare'
+Arachni::Reactor: /home/zapotek/arachni-build-dir/arachni/system/gems/gems/activerecord-4.2.5.1/lib/active_record/connection_adapters/sqlite3_adapter.rb:296:in `block in exec_query'
+Arachni::Reactor: /home/zapotek/arachni-build-dir/arachni/system/gems/gems/activerecord-4.2.5.1/lib/active_record/connection_adapters/abstract_adapter.rb:472:in `block in log'
+Arachni::Reactor: /home/zapotek/arachni-build-dir/arachni/system/gems/gems/activesupport-4.2.5.1/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+Arachni::Reactor: /home/zapotek/arachni-build-dir/arachni/system/gems/gems/activerecord-4.2.5.1/lib/active_record/connection_adapters/abstract_adapter.rb:466:in `log'
+Arachni::Reactor: /home/zapotek/arachni-build-dir/arachni/system/gems/gems/activerecord-4.2.5.1/lib/active_record/connection_adapters/sqlite3_adapter.rb:293:in `exec_query'
+Arachni::Reactor: /home/zapotek/arachni-build-dir/arachni/system/gems/gems/activerecord-4.2.5.1/lib/active_record/connection_adapters/abstract/database_statements.rb:355:in `select'
+Arachni::Reactor: /home/zapotek/arachni-build-dir/arachni/system/gems/gems/activerecord-4.2.5.1/lib/active_record/connection_adapters/abstract/database_statements.rb:32:in `select_all'
+Arachni::Reactor: /home/zapotek/arachni-build-dir/arachni/system/gems/gems/activerecord-4.2.5.1/lib/active_record/connection_adapters/abstract/query_cache.rb:70:in `select_all'
+Arachni::Reactor: /home/zapotek/arachni-build-dir/arachni/system/gems/gems/activerecord-4.2.5.1/lib/active_record/querying.rb:39:in `find_by_sql'
+Arachni::Reactor: /home/zapotek/arachni-build-dir/arachni/system/gems/gems/activerecord-4.2.5.1/lib/active_record/relation.rb:639:in `exec_queries'
+Arachni::Reactor: /home/zapotek/arachni-build-dir/arachni/system/gems/gems/activerecord-4.2.5.1/lib/active_record/relation.rb:515:in `load'
+Arachni::Reactor: /home/zapotek/arachni-build-dir/arachni/system/gems/gems/activerecord-4.2.5.1/lib/active_record/relation.rb:243:in `to_a'
+Arachni::Reactor: /home/zapotek/arachni-build-dir/arachni/system/gems/gems/arachni-reactor-0.1.1/lib/arachni/reactor/iterator.rb:52:in `initialize'
+Arachni::Reactor: /home/zapotek/arachni-build-dir/arachni/system/gems/gems/arachni-reactor-0.1.1/lib/arachni/reactor.rb:155:in `new'
+Arachni::Reactor: /home/zapotek/arachni-build-dir/arachni/system/gems/gems/arachni-reactor-0.1.1/lib/arachni/reactor.rb:155:in `create_iterator'
+Arachni::Reactor: /home/zapotek/arachni-build-dir/arachni/system/arachni-ui-web/lib/dispatcher_manager.rb:35:in `refresh'
+Arachni::Reactor: /home/zapotek/arachni-build-dir/arachni/system/arachni-ui-web/lib/dispatcher_manager.rb:19:in `block in monitor'
+Arachni::Reactor: /home/zapotek/arachni-build-dir/arachni/system/gems/gems/arachni-reactor-0.1.1/lib/arachni/reactor/tasks/base.rb:52:in `call'
+Arachni::Reactor: /home/zapotek/arachni-build-dir/arachni/system/gems/gems/arachni-reactor-0.1.1/lib/arachni/reactor/tasks/base.rb:52:in `call_task'
+Arachni::Reactor: /home/zapotek/arachni-build-dir/arachni/system/gems/gems/arachni-reactor-0.1.1/lib/arachni/reactor/tasks/persistent.rb:24:in `call'
+Arachni::Reactor: /home/zapotek/arachni-build-dir/arachni/system/gems/gems/arachni-reactor-0.1.1/lib/arachni/reactor/tasks/periodic.rb:43:in `call'
+Arachni::Reactor: /home/zapotek/arachni-build-dir/arachni/system/gems/gems/arachni-reactor-0.1.1/lib/arachni/reactor/tasks.rb:96:in `block in call'
+Arachni::Reactor: /home/zapotek/arachni-build-dir/arachni/system/gems/gems/arachni-reactor-0.1.1/lib/arachni/reactor/tasks.rb:96:in `each'
+Arachni::Reactor: /home/zapotek/arachni-build-dir/arachni/system/gems/gems/arachni-reactor-0.1.1/lib/arachni/reactor/tasks.rb:96:in `call'
+Arachni::Reactor: /home/zapotek/arachni-build-dir/arachni/system/gems/gems/arachni-reactor-0.1.1/lib/arachni/reactor.rb:309:in `block in run'
+Arachni::Reactor: /home/zapotek/arachni-build-dir/arachni/system/gems/gems/arachni-reactor-0.1.1/lib/arachni/reactor.rb:307:in `loop'
+Arachni::Reactor: /home/zapotek/arachni-build-dir/arachni/system/gems/gems/arachni-reactor-0.1.1/lib/arachni/reactor.rb:307:in `run'
+Arachni::Reactor: /home/zapotek/arachni-build-dir/arachni/system/gems/gems/arachni-reactor-0.1.1/lib/arachni/reactor.rb:349:in `block in run_in_thread'
+Migrating to DeviseCreateUsers (20120810022402)
+Migrating to RolifyCreateRoles (20120810022409)
+Migrating to CreateProfiles (20120812171354)
+Migrating to CreateScans (20121213171058)
+Migrating to CreateScansUsersJoinTable (20121216173832)
+Migrating to CreateIssues (20121217185533)
+Migrating to CreateComments (20121217231921)
+Migrating to CreateDispatchers (20121219224226)
+Migrating to CreateNotifications (20130114002808)
+Migrating to CreateReports (20130121042140)
+Migrating to CreateProfilesUsersJoinTable (20130213214155)
+Migrating to CreateSettings (20130214214926)
+Migrating to CreateScanGroups (20130215214848)
+Migrating to CreateScanGroupsScansJoinTable (20130215215201)
+Migrating to CreateUsersScanGroupsJoinTable (20130215230059)
+Migrating to CreateDispatchersUsersJoinTable (20130302162250)
+Migrating to AddFingerprintingToProfiles (20130608213932)
+Migrating to AddIdentifierToNotifications (20130609175134)
+Migrating to GenerateNotificationIdentifiers (20130609175254)
+Migrating to AddWelcomedToSettings (20130704221626)
+Migrating to AddHttpAuthToProfiles (20130719152335)
+Migrating to CreateSchedules (20130927200257)
+Migrating to AddStartedAtToScans (20130928201330)
+Migrating to AddScheduleIdToScans (20131003154327)
+Migrating to AddLoadBalanceToScans (20131010013423)
+Migrating to AddTimezoneToSettings (20131010190108)
+Migrating to AddAutoRefreshToSettings (20131012203032)
+Migrating to AddHttpQueueSizeToProfiles (20131109011550)
+Migrating to RenameSettingsModulesToChecks (20140628184455)
+Migrating to UpdateProfileForFrameworkv10 (20140628211607)
+Migrating to UpdateIssuesForFrameworkv10 (20140629003131)
+Scoped order and limit are ignored, it's forced to be batch order and batch size
+Migrating to AddSuspendInfoToScans (20140705233412)
+Migrating to AddStopAfterToSchedule (20140706182925)
+Migrating to AddHttpResponseMaxSizeToProfiles (20140916190718)
+Migrating to AddAuditJsonsToProfiles (20150422221254)
+Migrating to AddAuditXmlsToProfiles (20150422221306)
+Migrating to AddAuditUiInputsToProfiles (20150826121727)
