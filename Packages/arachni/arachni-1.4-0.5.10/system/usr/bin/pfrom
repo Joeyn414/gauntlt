@@ -1,6 +1,0 @@
-#!/bin/sh
-# $Id$
-libexecdir=/home/zapotek/arachni-build-dir/arachni/system/usr/libexec
-PATH=$libexecdir:$PATH
-export PATH
-push --from $*
