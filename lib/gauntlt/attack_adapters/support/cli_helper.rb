@@ -48,3 +48,6 @@ Before('@reallyslow') do
   @aruba_timeout_seconds = 600
 end
 
+Before('@megaslow') do
+  @aruba_timeout_seconds = 60000
+end
