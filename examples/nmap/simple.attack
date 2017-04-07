@@ -4,7 +4,7 @@ Feature: simple nmap attack (sanity check)
   Background:
     Given "nmap" is installed
     And the following profile:
-      | name     | value      |
+      | name     | value           |
       | hostname | scanme.nmap.org |
 
   Scenario: Verify server is available on standard web ports
@@ -17,4 +17,3 @@ Feature: simple nmap attack (sanity check)
       """
       443/tcp\s+open
       """
-

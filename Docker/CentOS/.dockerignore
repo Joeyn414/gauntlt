@@ -1,0 +1,3 @@
+#ignore all files I am using for backup or test
+**/*.test
+**/*.backup
