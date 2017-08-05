@@ -2,11 +2,7 @@
 # doing local dev, we can run tests and make sure we are passing CI.
 
 NMAP=`which nmap`
-GARMR=`which garmr`
-DIRB=`which dirb`
-DIRB_WORDLISTS=`locate dirb | grep "/dirb/wordlists$"`
 ARACHNI=`which arachni`
-HEARTBLEED=`which Heartbleed`
 SSLYZE_PATH=`which sslyze`
 SQLMAP_PATH=`which sqlmap`
 
@@ -30,32 +26,9 @@ if [ -z $SQLMAP_PATH ]
     ERRORS=$ERRORS+1
 fi
 
-if [ -z $GARMR ]
-  then
-    MESSAGE="garmr is not installed in your path, try installing it 'cd vendor/Garmr && sudo python setup.py install && cd ../..'"
-    ERRORS=$ERRORS+1
-fi
-
-if [ -z $DIRB_WORDLISTS ]
-  then
-    MESSAGE="DIRB_WORDLISTS environment variable not set, please set it. Usually this is where you extracted dirb in a directory called 'wordlists'"
-    ERRORS=$ERRORS+1
-fi
-
-if [ -z $DIRB ]
-  then
-    MESSAGE="dirb is not installed in your path, try installing it and then copying it into your path. Here is how you can build it: 'wget http://downloads.sourceforge.net/project/dirb/dirb/2.03/dirb203.tar.gz && tar xvfz dirb203.tar.gz && cd dirb && ./configure && make && cd ..'"
-    ERRORS=$ERRORS+1
-fi
-
 if [ -z $NMAP ]
   then
     MESSAGE="nmap is not installed in your path, try installing it (brew install nmap OR apt-get install nmap) and adding it to your path"
-    ERRORS=$ERRORS+1
-fi
-if [ -z $HEARTBLEED ]
-  then
-    MESSAGE="Heartbleed is not installed in your path, try installing it (https://github.com/FiloSottile/Heartbleed) and adding it to your path"
     ERRORS=$ERRORS+1
 fi
 
