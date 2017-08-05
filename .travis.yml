@@ -4,7 +4,14 @@ rvm:
   - 2.1.5
   - 2.2.4
   - 2.3.0
+  
+Services:
+  - docker
 before_install:
+  - docker pull joeyn414/centosgauntlt 
+  - docker run -d -p 127.0.0.1:80:4567 carlad/sinatra /bin/sh -c "cd /root/sinatra; bundle exec foreman start;"
+  - docker ps -a
+  - docker run joeyn414/centosgauntlt /bin/sh -c "./ready_to_rumble.sh"
   - git submodule update --init --recursive --force
   - gem update bundler
 before_script:
@@ -17,6 +24,11 @@ before_script:
     python-dev python-pip python-setuptools curl nmap w3af-console wget golang
   - export SSLYZE_PATH="/home/travis/build/gauntlt/gauntlt/vendor/sslyze/sslyze_cli.py"
   - export SQLMAP_PATH="/home/travis/build/gauntlt/gauntlt/vendor/sqlmap/sqlmap.py"
+  
+# going to need to update this:
+# run docker build test against docker container that runs gauntlt inside of it 
+# Then run a command that confirms that gauntlt is running correctly, more than likely the ready to rumble script
+
 #notifications:
 #  irc:
 #    channels:
