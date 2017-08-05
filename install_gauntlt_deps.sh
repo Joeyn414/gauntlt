@@ -49,15 +49,6 @@ if ! type "sqlmap" > /dev/null 2>&1; then
     ln -s `pwd`/sqlmap.py /usr/bin/sqlmap
 fi
 
-
-
-# install Go, Heartbleed
-if ! type "Heartbleed" > /dev/null 2>&1; then
-    apt-get install -y golang
-    export GOPATH=$HOME_FOLDER/go
-    export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
-    cat << 'EOF' >> $HOME_FOLDER/.bashrc
-
 # configure go pathways
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
@@ -65,43 +56,11 @@ EOF
     go get github.com/FiloSottile/Heartbleed
 fi
 
-
-# install dirb
-if ! type "dirb" > /dev/null 2>&1; then
-    cd $GAUNTLT_DIR/vendor
-    wget -q http://downloads.sourceforge.net/project/dirb/dirb/2.22/dirb222.tar.gz
-    tar -zxf dirb222.tar.gz
-    mv dirb222 dirb
-    chmod -R +x ./dirb
-    cd dirb
-    chown -R $(whoami) .
-    bash ./configure
-    make
-    ln -s `pwd`/dirb /usr/bin/dirb
-    cd $GAUNTLT_DIR/vendor/dirb/wordlists
-    export DIRB_WORDLISTS=`pwd`
-else
-    export DIRB_WORDLISTS=`locate dirb | grep "/dirb/wordlists$"`
-fi
-
-
-# install Garmr, from source
-if ! type "garmr" > /dev/null 2>&1; then
-    cd $GAUNTLT_DIR/vendor/Garmr
-    python setup.py install
-fi
-
-
 # install Arachni, from a gem
 if ! type "arachni" > /dev/null 2>&1; then
     gem install arachni -v 1.0.6
     gem install service_manager
 fi
-
-
-# start gruyere
-cd $GAUNTLT_DIR/vendor/gruyere
-bash ./manual_launch.sh
 
 # set the environmental variables
 export SSLYZE_PATH=`which sslyze`
@@ -111,7 +70,6 @@ export SQLMAP_PATH=`which sqlmap`
 cat << EOF >> $HOME_FOLDER/.bashrc
 
 # configure environmental variables for Gauntlt
-export DIRB_WORDLISTS=`locate dirb | grep "/dirb/wordlists$"`
 export SSLYZE_PATH=`which sslyze`
 export SQLMAP_PATH=`which sqlmap`
 EOF
