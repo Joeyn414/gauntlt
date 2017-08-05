@@ -17,9 +17,6 @@ before_script:
     python-dev python-pip python-setuptools curl nmap w3af-console wget golang
   - export SSLYZE_PATH="/home/travis/build/gauntlt/gauntlt/vendor/sslyze/sslyze_cli.py"
   - export SQLMAP_PATH="/home/travis/build/gauntlt/gauntlt/vendor/sqlmap/sqlmap.py"
-  - 'cd vendor/Garmr && sudo python setup.py install && cd ../..'
-  - 'cd vendor && wget http://downloads.sourceforge.net/project/dirb/dirb/2.03/dirb203.tar.gz && tar xvfz dirb203.tar.gz && cd dirb && ./configure && make && sudo cp dirb /usr/local/bin/ && cd ..'
-  - export DIRB_WORDLISTS="/home/travis/build/gauntlt/gauntlt/vendor/dirb/wordlists"
 #notifications:
 #  irc:
 #    channels:
