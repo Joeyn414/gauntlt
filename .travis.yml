@@ -8,10 +8,9 @@ rvm:
 Services:
   - docker
 before_install:
-  - docker pull joeyn414/centosgauntlt 
-  - docker run -d -p 127.0.0.1:80:4567 carlad/sinatra /bin/sh -c "cd /root/sinatra; bundle exec foreman start;"
+  - docker pull joeyn414/centosgauntlt
+  - docker run joeyn414/centosgauntlt /bin/sh -c "cd / && ./ready_to_rumble.sh"
   - docker ps -a
-  - docker run joeyn414/centosgauntlt /bin/sh -c "./ready_to_rumble.sh"
   - git submodule update --init --recursive --force
   - gem update bundler
 before_script:
