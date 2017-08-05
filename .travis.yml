@@ -6,7 +6,7 @@ Services:
   - docker
 before_install:
   - docker pull joeyn414/centosgauntlt
-  - docker run joeyn414/centosgauntlt /bin/sh -c "cd / && ./ready_to_rumble.sh"
+  - docker run joeyn414/centosgauntlt /bin/sh -c "./gauntlt/ready_to_rumble.sh"
   - docker ps -a
   - git submodule update --init --recursive --force
   - gem update bundler
