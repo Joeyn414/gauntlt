@@ -9,7 +9,7 @@ before_install:
   - docker run joeyn414/centosgauntlt /bin/sh -c "./gauntlt/ready_to_rumble.sh"
   - docker ps -a
   - git submodule update --init --recursive --force
-  - gem update bundler
+ # - gem update bundler
 before_script:
   #- go get github.com/FiloSottile/Heartbleed
   #- go install github.com/FiloSottile/Heartbleed
